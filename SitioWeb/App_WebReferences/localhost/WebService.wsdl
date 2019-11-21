@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.edu.pe/localhost" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.edu.pe/localhost" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Servicioweb_ProyectoBD1</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.edu.pe/localhost">
+      <s:element name="WebRegistrarDocente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="objDocente" type="tns:Docente" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Docente">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ICOD_DOCENTE" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="VNOMBRE_DOCENTE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VAPATERNO_DOCENTE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VAMATERNO_DOCENTE" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FK_ICOD_CARGO" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="estado" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="WebRegistrarDocenteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WebRegistrarDocenteResult" type="tns:Docente" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WebActualizarDocente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="objDocente" type="tns:Docente" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WebActualizarDocenteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WebActualizarDocenteResult" type="tns:Docente" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WebEliminarDocente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="objDocente" type="tns:Docente" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WebEliminarDocenteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WebEliminarDocenteResult" type="tns:Docente" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WebLeerDocente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="objDocente" type="tns:Docente" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WebLeerDocenteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WebLeerDocenteResult" type="tns:Docente" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WebLeerDocentes">
+        <s:complexType />
+      </s:element>
+      <s:element name="WebLeerDocentesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WebLeerDocentesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WebRegistrarReunion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="objReunion" type="tns:Reunion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Reunion">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ICOD_REUNION" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="DFEC_REUNION" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="DHENT_REUNION" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="DHSAL_REUNION" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="VLUGAR_REUNION" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FK_ICOD_DOCENTE" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="estado" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="WebRegistrarReunionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WebRegistrarReunionResult" type="tns:Reunion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WebLeerReunion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="objReunion" type="tns:Reunion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WebLeerReunionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WebLeerReunionResult" type="tns:Reunion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WebLeerReunionds">
+        <s:complexType />
+      </s:element>
+      <s:element name="WebLeerReuniondsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WebLeerReuniondsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WebRegistrarActividad">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="objActividad" type="tns:Actividad" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Actividad">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ICOD_ACTIVIDAD" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="VDESC_ACTIVIDAD" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DFEC_ACTIVIDAD" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="WebRegistrarActividadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WebRegistrarActividadResult" type="tns:Actividad" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WebLeerActividad">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="objActividad" type="tns:Actividad" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WebLeerActividadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WebLeerActividadResult" type="tns:Actividad" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WebLeerActividadds">
+        <s:complexType />
+      </s:element>
+      <s:element name="WebLeerActividaddsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WebLeerActividaddsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="WebRegistrarDocenteSoapIn">
+    <wsdl:part name="parameters" element="tns:WebRegistrarDocente" />
+  </wsdl:message>
+  <wsdl:message name="WebRegistrarDocenteSoapOut">
+    <wsdl:part name="parameters" element="tns:WebRegistrarDocenteResponse" />
+  </wsdl:message>
+  <wsdl:message name="WebActualizarDocenteSoapIn">
+    <wsdl:part name="parameters" element="tns:WebActualizarDocente" />
+  </wsdl:message>
+  <wsdl:message name="WebActualizarDocenteSoapOut">
+    <wsdl:part name="parameters" element="tns:WebActualizarDocenteResponse" />
+  </wsdl:message>
+  <wsdl:message name="WebEliminarDocenteSoapIn">
+    <wsdl:part name="parameters" element="tns:WebEliminarDocente" />
+  </wsdl:message>
+  <wsdl:message name="WebEliminarDocenteSoapOut">
+    <wsdl:part name="parameters" element="tns:WebEliminarDocenteResponse" />
+  </wsdl:message>
+  <wsdl:message name="WebLeerDocenteSoapIn">
+    <wsdl:part name="parameters" element="tns:WebLeerDocente" />
+  </wsdl:message>
+  <wsdl:message name="WebLeerDocenteSoapOut">
+    <wsdl:part name="parameters" element="tns:WebLeerDocenteResponse" />
+  </wsdl:message>
+  <wsdl:message name="WebLeerDocentesSoapIn">
+    <wsdl:part name="parameters" element="tns:WebLeerDocentes" />
+  </wsdl:message>
+  <wsdl:message name="WebLeerDocentesSoapOut">
+    <wsdl:part name="parameters" element="tns:WebLeerDocentesResponse" />
+  </wsdl:message>
+  <wsdl:message name="WebRegistrarReunionSoapIn">
+    <wsdl:part name="parameters" element="tns:WebRegistrarReunion" />
+  </wsdl:message>
+  <wsdl:message name="WebRegistrarReunionSoapOut">
+    <wsdl:part name="parameters" element="tns:WebRegistrarReunionResponse" />
+  </wsdl:message>
+  <wsdl:message name="WebLeerReunionSoapIn">
+    <wsdl:part name="parameters" element="tns:WebLeerReunion" />
+  </wsdl:message>
+  <wsdl:message name="WebLeerReunionSoapOut">
+    <wsdl:part name="parameters" element="tns:WebLeerReunionResponse" />
+  </wsdl:message>
+  <wsdl:message name="WebLeerReuniondsSoapIn">
+    <wsdl:part name="parameters" element="tns:WebLeerReunionds" />
+  </wsdl:message>
+  <wsdl:message name="WebLeerReuniondsSoapOut">
+    <wsdl:part name="parameters" element="tns:WebLeerReuniondsResponse" />
+  </wsdl:message>
+  <wsdl:message name="WebRegistrarActividadSoapIn">
+    <wsdl:part name="parameters" element="tns:WebRegistrarActividad" />
+  </wsdl:message>
+  <wsdl:message name="WebRegistrarActividadSoapOut">
+    <wsdl:part name="parameters" element="tns:WebRegistrarActividadResponse" />
+  </wsdl:message>
+  <wsdl:message name="WebLeerActividadSoapIn">
+    <wsdl:part name="parameters" element="tns:WebLeerActividad" />
+  </wsdl:message>
+  <wsdl:message name="WebLeerActividadSoapOut">
+    <wsdl:part name="parameters" element="tns:WebLeerActividadResponse" />
+  </wsdl:message>
+  <wsdl:message name="WebLeerActividaddsSoapIn">
+    <wsdl:part name="parameters" element="tns:WebLeerActividadds" />
+  </wsdl:message>
+  <wsdl:message name="WebLeerActividaddsSoapOut">
+    <wsdl:part name="parameters" element="tns:WebLeerActividaddsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebserviceSoap">
+    <wsdl:operation name="WebRegistrarDocente">
+      <wsdl:input message="tns:WebRegistrarDocenteSoapIn" />
+      <wsdl:output message="tns:WebRegistrarDocenteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WebActualizarDocente">
+      <wsdl:input message="tns:WebActualizarDocenteSoapIn" />
+      <wsdl:output message="tns:WebActualizarDocenteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WebEliminarDocente">
+      <wsdl:input message="tns:WebEliminarDocenteSoapIn" />
+      <wsdl:output message="tns:WebEliminarDocenteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WebLeerDocente">
+      <wsdl:input message="tns:WebLeerDocenteSoapIn" />
+      <wsdl:output message="tns:WebLeerDocenteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WebLeerDocentes">
+      <wsdl:input message="tns:WebLeerDocentesSoapIn" />
+      <wsdl:output message="tns:WebLeerDocentesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WebRegistrarReunion">
+      <wsdl:input message="tns:WebRegistrarReunionSoapIn" />
+      <wsdl:output message="tns:WebRegistrarReunionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WebLeerReunion">
+      <wsdl:input message="tns:WebLeerReunionSoapIn" />
+      <wsdl:output message="tns:WebLeerReunionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WebLeerReunionds">
+      <wsdl:input message="tns:WebLeerReuniondsSoapIn" />
+      <wsdl:output message="tns:WebLeerReuniondsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WebRegistrarActividad">
+      <wsdl:input message="tns:WebRegistrarActividadSoapIn" />
+      <wsdl:output message="tns:WebRegistrarActividadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WebLeerActividad">
+      <wsdl:input message="tns:WebLeerActividadSoapIn" />
+      <wsdl:output message="tns:WebLeerActividadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WebLeerActividadds">
+      <wsdl:input message="tns:WebLeerActividaddsSoapIn" />
+      <wsdl:output message="tns:WebLeerActividaddsSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebserviceSoap" type="tns:WebserviceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="WebRegistrarDocente">
+      <soap:operation soapAction="http://www.edu.pe/localhost/WebRegistrarDocente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WebActualizarDocente">
+      <soap:operation soapAction="http://www.edu.pe/localhost/WebActualizarDocente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WebEliminarDocente">
+      <soap:operation soapAction="http://www.edu.pe/localhost/WebEliminarDocente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WebLeerDocente">
+      <soap:operation soapAction="http://www.edu.pe/localhost/WebLeerDocente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WebLeerDocentes">
+      <soap:operation soapAction="http://www.edu.pe/localhost/WebLeerDocentes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WebRegistrarReunion">
+      <soap:operation soapAction="http://www.edu.pe/localhost/WebRegistrarReunion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WebLeerReunion">
+      <soap:operation soapAction="http://www.edu.pe/localhost/WebLeerReunion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WebLeerReunionds">
+      <soap:operation soapAction="http://www.edu.pe/localhost/WebLeerReunionds" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WebRegistrarActividad">
+      <soap:operation soapAction="http://www.edu.pe/localhost/WebRegistrarActividad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WebLeerActividad">
+      <soap:operation soapAction="http://www.edu.pe/localhost/WebLeerActividad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WebLeerActividadds">
+      <soap:operation soapAction="http://www.edu.pe/localhost/WebLeerActividadds" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebserviceSoap12" type="tns:WebserviceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="WebRegistrarDocente">
+      <soap12:operation soapAction="http://www.edu.pe/localhost/WebRegistrarDocente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WebActualizarDocente">
+      <soap12:operation soapAction="http://www.edu.pe/localhost/WebActualizarDocente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WebEliminarDocente">
+      <soap12:operation soapAction="http://www.edu.pe/localhost/WebEliminarDocente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WebLeerDocente">
+      <soap12:operation soapAction="http://www.edu.pe/localhost/WebLeerDocente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WebLeerDocentes">
+      <soap12:operation soapAction="http://www.edu.pe/localhost/WebLeerDocentes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WebRegistrarReunion">
+      <soap12:operation soapAction="http://www.edu.pe/localhost/WebRegistrarReunion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WebLeerReunion">
+      <soap12:operation soapAction="http://www.edu.pe/localhost/WebLeerReunion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WebLeerReunionds">
+      <soap12:operation soapAction="http://www.edu.pe/localhost/WebLeerReunionds" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WebRegistrarActividad">
+      <soap12:operation soapAction="http://www.edu.pe/localhost/WebRegistrarActividad" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WebLeerActividad">
+      <soap12:operation soapAction="http://www.edu.pe/localhost/WebLeerActividad" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WebLeerActividadds">
+      <soap12:operation soapAction="http://www.edu.pe/localhost/WebLeerActividadds" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Webservice">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Servicioweb_ProyectoBD1</wsdl:documentation>
+    <wsdl:port name="WebserviceSoap" binding="tns:WebserviceSoap">
+      <soap:address location="http://localhost:9092/Servicios/WebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebserviceSoap12" binding="tns:WebserviceSoap12">
+      <soap12:address location="http://localhost:9092/Servicios/WebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

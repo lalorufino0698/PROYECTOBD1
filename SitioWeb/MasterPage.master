@@ -1,0 +1,142 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="css/AdminLTE.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+<body class="skin-blue">
+    <header class ="header">
+        <!--BEGIN CABECERA-->
+        <a href ="#" class="logo">PROYECTOBD1- 2019
+        </a>
+        <nav class="navbar navbar-static-top" role="navigation">
+            <a href="#" class="navbar-btn sidebar-toggle" data-toggle="offcanvas" role="button">
+                <span class="sr-only">Navigation Toggle</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+        </nav>
+        <!--END CABECERA-->
+    </header>
+
+
+    <div class="wrapper row-offcanvas row-offcanvas-left">
+        <aside class="left-side sidebar-offcanvas">
+            <section class="sidebar">
+                <div class="user-panel">
+                    <div class="pull-left image">
+                        <img src="img/avatar9.jpg" class="img-circle" alt="no se visualiza" id="imgAvatar" />
+                    </div>
+                    <div class="pull-left info">
+                        <p>Bienvenido sr(a).</p>
+                        <a href="#"><i class="fa fa-circle text-success"></i></a>
+                    </div>
+                </div>
+                <ul class="sidebar-menu">
+                    <li class="active">
+                        <a href="#">
+                            <i class="fa fa-dashboard"></i><span>BIENVENIDOS</span>
+                        </a>
+                    </li>
+              </ul>
+                <div class="dropdown">
+                    <button class="btn btn-primary btn-lg dropdown-toggle" type="button" id="dropdownButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        REGISTRAR
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="RegistrarDocente.aspx">
+                            <i class="fa fa-th"></i>
+                            <span>Registrar Docente</span>
+                        </a>
+                        <a class="dropdown-item" href="RegistrarActividad.aspx">
+                            <i class="fa fa-th"></i>
+                            <span>Registrar Actividad</span>
+                        </a>
+                        <a class="dropdown-item" href="RegistrarReunion.aspx">
+                            <i class="fa fa-th"></i>
+                            <span>Registrar Reunion</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-primary btn-lg dropdown-toggle" type="button" id="dropdownButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        CONSULTAR
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="ConsultarDocente.aspx">
+                            <i class="fa fa-th"></i>
+                            <span>Consultar Docente</span>
+                        </a>
+                        <a class="dropdown-item" href="ConsultarReunion.aspx">
+                            <i class="fa fa-th"></i>
+                            <span>Consultar Reunion</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-th"></i>
+                            <span>Consultar Actividad</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-primary btn-lg dropdown-toggle" type="button" id="dropdownButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       ELIMINAR
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-th"></i>
+                            <span>Eliminar Docente</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-th"></i>
+                            <span>Elimnar Tema</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-th"></i>
+                            <span>Elimnar Reunion</span>
+                        </a>
+                    </div>
+                </div>
+
+            </section>
+        </aside>
+    </div>
+
+    <aside class="right-side">
+        <section class="content-header">
+            <h1>
+                <asp:Label ID="lblOptionMenu" runat="server" Text="Panel General"></asp:Label>
+            </h1>
+        </section>
+        <section class="content">
+            <form id="form1" runat="server">
+                <div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </form>
+        </section>
+    </aside>
+
+
+
+
+
+</body>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="js/AdminLTE/app.js" type="text/javascript"></script>
+</html>

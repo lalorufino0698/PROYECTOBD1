@@ -1,0 +1,11 @@
+D:\proyectos visual 19\PROYECTOBD1\Negocio\bin\Debug\Negocio.dll
+D:\proyectos visual 19\PROYECTOBD1\Negocio\bin\Debug\Negocio.pdb
+D:\proyectos visual 19\PROYECTOBD1\Negocio\bin\Debug\Dominio.dll
+D:\proyectos visual 19\PROYECTOBD1\Negocio\bin\Debug\GestionDatos.dll
+D:\proyectos visual 19\PROYECTOBD1\Negocio\bin\Debug\Dominio.pdb
+D:\proyectos visual 19\PROYECTOBD1\Negocio\bin\Debug\GestionDatos.pdb
+D:\proyectos visual 19\PROYECTOBD1\Negocio\obj\Debug\Negocio.csprojAssemblyReference.cache
+D:\proyectos visual 19\PROYECTOBD1\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+D:\proyectos visual 19\PROYECTOBD1\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+D:\proyectos visual 19\PROYECTOBD1\Negocio\obj\Debug\Negocio.dll
+D:\proyectos visual 19\PROYECTOBD1\Negocio\obj\Debug\Negocio.pdb

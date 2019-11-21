@@ -1,0 +1,6 @@
+D:\proyectos visual 19\PROYECTOBD1\Dominio\bin\Debug\Dominio.dll
+D:\proyectos visual 19\PROYECTOBD1\Dominio\bin\Debug\Dominio.pdb
+D:\proyectos visual 19\PROYECTOBD1\Dominio\obj\Debug\Dominio.csprojAssemblyReference.cache
+D:\proyectos visual 19\PROYECTOBD1\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+D:\proyectos visual 19\PROYECTOBD1\Dominio\obj\Debug\Dominio.dll
+D:\proyectos visual 19\PROYECTOBD1\Dominio\obj\Debug\Dominio.pdb

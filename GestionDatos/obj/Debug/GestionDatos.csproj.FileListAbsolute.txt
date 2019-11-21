@@ -1,0 +1,9 @@
+D:\proyectos visual 19\PROYECTOBD1\GestionDatos\bin\Debug\GestionDatos.dll
+D:\proyectos visual 19\PROYECTOBD1\GestionDatos\bin\Debug\GestionDatos.pdb
+D:\proyectos visual 19\PROYECTOBD1\GestionDatos\bin\Debug\Dominio.dll
+D:\proyectos visual 19\PROYECTOBD1\GestionDatos\bin\Debug\Dominio.pdb
+D:\proyectos visual 19\PROYECTOBD1\GestionDatos\obj\Debug\GestionDatos.csprojAssemblyReference.cache
+D:\proyectos visual 19\PROYECTOBD1\GestionDatos\obj\Debug\GestionDatos.csproj.CoreCompileInputs.cache
+D:\proyectos visual 19\PROYECTOBD1\GestionDatos\obj\Debug\GestionDatos.csproj.CopyComplete
+D:\proyectos visual 19\PROYECTOBD1\GestionDatos\obj\Debug\GestionDatos.dll
+D:\proyectos visual 19\PROYECTOBD1\GestionDatos\obj\Debug\GestionDatos.pdb

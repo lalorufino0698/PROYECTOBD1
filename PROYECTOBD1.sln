@@ -1,0 +1,89 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio", "Dominio\Dominio.csproj", "{837AECDA-CF0A-4DA7-94F9-A13DAE4DF601}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestionDatos", "GestionDatos\GestionDatos.csproj", "{15484798-BAAB-4748-8F8D-014241EE04BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Negocio", "Negocio\Negocio.csproj", "{B8BA721E-9BE2-45A4-9C59-27D010CE3527}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Servicios", "http://localhost:9092/Servicios", "{9541F769-A798-41AB-A1F1-FCEFBDF629C5}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "false"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{b8ba721e-9be2-45a4-9c59-27d010ce3527}|Negocio.dll;{15484798-baab-4748-8f8d-014241ee04bf}|GestionDatos.dll;{837aecda-cf0a-4da7-94f9-a13dae4df601}|Dominio.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/Servicios"
+		Debug.AspNetCompiler.PhysicalPath = "Servicios\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Servicios\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Servicios"
+		Release.AspNetCompiler.PhysicalPath = "Servicios\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Servicios\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "Servicios\"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SitioWeb", "http://localhost:9092/SitioWeb", "{3D740D0E-E51F-4B31-98ED-6D52E8949375}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "false"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{b8ba721e-9be2-45a4-9c59-27d010ce3527}|Negocio.dll;{837AECDA-CF0A-4DA7-94F9-A13DAE4DF601}|Dominio.dll;{15484798-BAAB-4748-8F8D-014241EE04BF}|GestionDatos.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/SitioWeb"
+		Debug.AspNetCompiler.PhysicalPath = "SitioWeb\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\SitioWeb\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/SitioWeb"
+		Release.AspNetCompiler.PhysicalPath = "SitioWeb\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\SitioWeb\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "SitioWeb\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{837AECDA-CF0A-4DA7-94F9-A13DAE4DF601}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{837AECDA-CF0A-4DA7-94F9-A13DAE4DF601}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{837AECDA-CF0A-4DA7-94F9-A13DAE4DF601}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{837AECDA-CF0A-4DA7-94F9-A13DAE4DF601}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15484798-BAAB-4748-8F8D-014241EE04BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15484798-BAAB-4748-8F8D-014241EE04BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15484798-BAAB-4748-8F8D-014241EE04BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15484798-BAAB-4748-8F8D-014241EE04BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8BA721E-9BE2-45A4-9C59-27D010CE3527}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8BA721E-9BE2-45A4-9C59-27D010CE3527}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8BA721E-9BE2-45A4-9C59-27D010CE3527}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8BA721E-9BE2-45A4-9C59-27D010CE3527}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9541F769-A798-41AB-A1F1-FCEFBDF629C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9541F769-A798-41AB-A1F1-FCEFBDF629C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9541F769-A798-41AB-A1F1-FCEFBDF629C5}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{9541F769-A798-41AB-A1F1-FCEFBDF629C5}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{3D740D0E-E51F-4B31-98ED-6D52E8949375}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D740D0E-E51F-4B31-98ED-6D52E8949375}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D740D0E-E51F-4B31-98ED-6D52E8949375}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D740D0E-E51F-4B31-98ED-6D52E8949375}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0C9041D2-E7A5-44E8-A1C4-0ECF29AC0091}
+	EndGlobalSection
+EndGlobal
